@@ -16,7 +16,7 @@ export async function connect() {
     try {
         if (!db) {
             await client.connect();
-            db = client.db("********************");
+            db = client.db("Cipher_Vault");
             console.log("Connected to MongoDB");
         }
         return db;
